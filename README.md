@@ -25,5 +25,7 @@
  - The Codeup Data Science team. 
   
 ## Data Dictionary
- 
-'| Target   | Dataype   | Definition                             |\n|:---------|:----------|:---------------------------------------|\n| churn    | object    | Whether or not a customer has churned. |'
+
+| Target   | Dataype   | Definition                            |
+|:---------|:----------|:--------------------------------------|
+| churn    | object    | Whether or not a customer has churned |
