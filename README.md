@@ -29,3 +29,16 @@
 | Target   | Dataype   | Definition                            |
 |:---------|:----------|:--------------------------------------|
 | churn    | object    | Whether or not a customer has churned |
+
+## Initial Hypotheses 
+
+### Hypothesis 1
+ - **alpha** = 0.05
+ - $H_0$: There is no difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-year contracts. 
+ - $H_a$: There is a significant difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-yera contracts. 
+ - **Outcome**: I rejected the Null Hypothesis. There is a significant difference in the churn rate for customers on month-to-month contracts and customers on either year or two-year contracts. 
+ 
+### Hypothesis 2 
+ - **alpha** = 0.05
+ - $H_0$: There is no 
+
