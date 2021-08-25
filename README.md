@@ -34,11 +34,10 @@
 
 ### Hypothesis 1
  - **alpha** = 0.05
- - ![equation](https://latex.codecogs.com/gif.latex?H_0): There is no difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-year contracts. 
- - $ H_a $ : There is a significant difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-yera contracts. 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-year contracts. 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-yera contracts. 
  - **Outcome**: I rejected the Null Hypothesis. There is a significant difference in the churn rate for customers on month-to-month contracts and customers on either year or two-year contracts. 
  
 ### Hypothesis 2 
  - **alpha** = 0.05
- - $ H_0 $ : There is no 
-
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no 
