@@ -77,32 +77,32 @@
  
 ## Executive Summary - Conclusions & Next Steps 
  - With the goal of determining the biggest drivers of churn. I used two classification models: **Random forest** and **Decision Tree**.
-     - Utilitizing **feature_importances** of **Random forest** I was able to determine the relative importance of each variable for predicting churn.
+ - Utilitizing **feature_importances** of **Random forest** I was able to determine the relative importance of each variable for predicting churn. The data indicated in the table below shows us that **tenure**, **monthly charges**, **contract type**, and **payment type** are the biggest drivers of churn.
      
-|                                       |   relative importance |
-|:--------------------------------------|----------------------:|
-| tenure                                |            0.24197    |
-| monthly_charges                       |            0.156533   |
-| contract_type_id                      |            0.148934   |
-| payment_type_id                       |            0.0805465  |
-| internet_service_type_id              |            0.0434827  |
-| tech_support_Yes                      |            0.0404554  |
-| online_security_Yes                   |            0.0367749  |
-| gender_Male                           |            0.0235222  |
-| online_backup_Yes                     |            0.0222814  |
-| senior_citizen                        |            0.0203455  |
-| partner_Yes                           |            0.019818   |
-| multiple_lines_Yes                    |            0.0197366  |
-| dependents_Yes                        |            0.018233   |
-| device_protection_Yes                 |            0.0172931  |
-| streaming_movies_Yes                  |            0.0162566  |
-| streaming_tv_Yes                      |            0.0161795  |
-| online_backup_No internet service     |            0.0144566  |
-| tech_support_No internet service      |            0.0116313  |
-| online_security_No internet service   |            0.0116167  |
-| streaming_tv_No internet service      |            0.0101157  |
-| device_protection_No internet service |            0.0087282  |
-| streaming_movies_No internet service  |            0.00830758 |
-| multiple_lines_No phone service       |            0.00655208 |
-| phone_service_Yes                     |            0.00622841 |
+    |                                       |   relative importance |
+    |:--------------------------------------|----------------------:|
+    | tenure                                |            0.24197    |
+    | monthly_charges                       |            0.156533   |
+    | contract_type_id                      |            0.148934   |
+    | payment_type_id                       |            0.0805465  |
+    | internet_service_type_id              |            0.0434827  |
+    | tech_support_Yes                      |            0.0404554  |
+    | online_security_Yes                   |            0.0367749  |
+    | gender_Male                           |            0.0235222  |
+    | online_backup_Yes                     |            0.0222814  |
+    | senior_citizen                        |            0.0203455  |
+    | partner_Yes                           |            0.019818   |
+    | multiple_lines_Yes                    |            0.0197366  |
+    | dependents_Yes                        |            0.018233   |
+    | device_protection_Yes                 |            0.0172931  |
+    | streaming_movies_Yes                  |            0.0162566  |
+    | streaming_tv_Yes                      |            0.0161795  |
+    | online_backup_No internet service     |            0.0144566  |
+    | tech_support_No internet service      |            0.0116313  |
+    | online_security_No internet service   |            0.0116167  |
+    | streaming_tv_No internet service      |            0.0101157  |
+    | device_protection_No internet service |            0.0087282  |
+    | streaming_movies_No internet service  |            0.00830758 |
+    | multiple_lines_No phone service       |            0.00655208 |
+    | phone_service_Yes                     |            0.00622841 |
 
