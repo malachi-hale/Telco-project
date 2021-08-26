@@ -78,7 +78,8 @@
 ## Executive Summary - Conclusions & Next Steps 
  - With the goal of determining the biggest drivers of churn. I used two classification models: **Random forest** and **Decision Tree**.
      - Utilitizing **feature_importances** of **Random forest** I was able to determine the relative importance of each variable for predicting churn.
-     |                                       |   relative importance |
+     
+|                                       |   relative importance |
 |:--------------------------------------|----------------------:|
 | tenure                                |            0.24197    |
 | monthly_charges                       |            0.156533   |
