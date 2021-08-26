@@ -195,7 +195,7 @@ With the goal of determining the biggest drivers of churn. I used two classifica
  
  - Finish with key takeaways, recommendations, and next steps. 
  
- ## Reproduct my project 
+ ## Reproduce my project 
  To reproduce my project, you will need you own `env.py` file with database credentials, in addition to the files listed below:
  - Read this `README.md` file.
  - Download `acquire.py`, `prepare.py`, and `final_report.ipynb`.
