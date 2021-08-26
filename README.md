@@ -25,10 +25,41 @@
  - The Codeup Data Science team. 
   
 ## Data Dictionary
+**Target Variable**
 
 | Target   | Dataype   | Definition                            |
 |:---------|:----------|:--------------------------------------|
 | churn    | object    | Whether or not a customer has churned |
+
+**Features of our data, before cleaning**
+| Feature                  | Dataype   | Definition                                                                                                     |
+|:-------------------------|:----------|:---------------------------------------------------------------------------------------------------------------|
+| customer_id              | object    | Identification number for customer                                                                             |
+| gender                   | object    | Customer gender, male or female                                                                                |
+| senior_citizen           | int64     | Yes or no, is the customer a senior citizen                                                                    |
+| partner                  | object    | Yes or no, does the customer customer has a parter                                                             |
+| dependents               | object    | Number of dependents a customer has                                                                            |
+| tenure                   | int64     | Number of days a customer has been with the company                                                            |
+| phone_service            | object    | Type of phone service plan a customer has                                                                      |
+| multiple_lines           | object    | Yes or no, does the customer have multiple lines                                                               |
+| internet_service_type_id | int64     | 1 for DSL, 2 for Fiber Optic, 3 for None                                                                       |
+| online_security          | object    | Yes, no, or no internet service                                                                                |
+| online_backup            | object    | Yes, no, or no internet service                                                                                |
+| device_protection        | object    | Yes, no, or no internet service                                                                                |
+| tech_support             | object    | Yes, no, or no internet service                                                                                |
+| streaming_tv             | object    | Yes, no, or no internet service                                                                                |
+| streaming_movies         | object    | Yes, no, or no internet service                                                                                |
+| contract_type_id         | int64     | 1 for month-to-month, 2 for year, and 3 for two-year contract                                                  |
+| paperless_billing        | object    | Yes or no, whether or not the customer uses paperless billing                                                  |
+| payment_type_id          | int64     | 1 for electronic check, 2 for mailed check, 3 for automatic bank transfer, 4 for automatic credit card payment |
+| monthly_charges          | float64   | Monthly charges the customer pays                                                                              |
+| total_charges            | object    | Total charges the customer has paid                                                                            |
+| churn                    | object    | Yes or no, whether or not the customer has churned                                                             |
+| contract_type            | object    | Month-to-month, year, or two-year contract                                                                     |
+| internet_service_type    | object    | DSL, Fiber Optic, or None                                                                                      |
+| payment_type             | object    | Electronic check, mailed check, automatic bank transfer, or automatic credit card payment                      |
+| has_churned              | int64     | 0 for has not churned, 1 for has churned                                                                       |
+
 
 ## Initial Hypotheses 
 
