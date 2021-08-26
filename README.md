@@ -66,17 +66,23 @@
 ### Hypothesis 1
  - **alpha** = 0.05
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-year contracts. 
+ 
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-yera contracts. 
+ 
  - **Outcome**: I rejected the Null Hypothesis. There is a significant difference in the churn rate for customers on month-to-month contracts and customers on either year or two-year contracts. 
  
 ### Hypothesis 2 
  - **alpha** = 0.05
+ 
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no correlation between customer churn rate and monthly charges. 
+ 
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a correlation between customer churn rate and monthly charges.
+ 
  - **Outcome**: I rejected the Null Hypothesis. The churn rate and monthly charges are correlated.
  
 ## Executive Summary - Conclusions & Next Steps 
- - With the goal of determining the biggest drivers of churn. I used two classification models: **Random forest** and **Decision Tree**.
+With the goal of determining the biggest drivers of churn. I used two classification models: **Random forest** and **Decision Tree**.
+ 
  - Utilitizing **feature_importances** of **Random forest** I was able to determine the relative importance of each variable for predicting churn. The data indicated in the table below shows us that **tenure**, **monthly charges**, **contract type**, and **payment type** are the biggest drivers of churn.
      
     |                                       |   relative importance |
@@ -106,3 +112,10 @@
     | multiple_lines_No phone service       |            0.00655208 |
     | phone_service_Yes                     |            0.00622841 |
 
+ - We run the **Mann Whitney** test on **tenure**, **monthly charges**, **contract type**. We conclude that all four of these variables are significantly associated with churn. 
+ 
+ - We use the the **Decision Tree** model to determine how to associate the specified variables. 
+     - We find that having a month-to-month contract is the biggest predictor of churn. 
+     - Of the customers on a month-to-month contract, customers with month charges less than or equal to $68.43 are more likely to churn. 
+     - Of these customers, those with tenure of less than or equal to 5 days are more likely to churn. 
+ 
