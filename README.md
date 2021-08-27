@@ -80,7 +80,7 @@
  
  - **Outcome**: I rejected the Null Hypothesis. The churn rate and monthly charges are correlated.
  
-  - We run the **Mann Whitney** test on **tenure**, **monthly charges**, **contract type**. We conclude that all four of these variables are significantly associated with churn. 
+  - We run the **Mann Whitney** test on **tenure**, **monthly charges**, **contract type**, **payment type id**, and **internet service type id**. We conclude that for the first four of these variables, there is a significant difference in mean for customers who churn and customers who don't churn. There is no significant difference in mean for **internet service type id**. 
   
 ## Executive Summary - Conclusions & Next Steps 
 With the goal of determining the biggest drivers of churn. I used two classification models: **Random forest** and **Decision Tree**.
