@@ -60,6 +60,36 @@
 | payment_type             | object    | Electronic check, mailed check, automatic bank transfer, or automatic credit card payment                      |
 | has_churned              | int64     | 0 for has not churned, 1 for has churned                                                                       |
 
+**Features of our data after cleaning** 
+| Feature                               | Dataype   | Definition                                                                                                     |
+|:--------------------------------------|:----------|:---------------------------------------------------------------------------------------------------------------|
+| customer_id                           | object    | Identification number for customer                                                                             |
+| senior_citizen                        | int64     | 0 for not senior citizen, 1 for senior citizen                                                                 |
+| tenure                                | int64     | Months the customer has been with the company                                                                  |
+| internet_service_type_id              | int64     | 1 for DSL, 2 for Fiber Optic, 3 for None                                                                       |
+| contract_type_id                      | int64     | 1 for month-to-month, 2 for year, and 3 for two-year contract                                                  |
+| payment_type_id                       | int64     | 1 for electronic check, 2 for mailed check, 3 for automatic bank transfer, 4 for automatic credit card payment |
+| monthly_charges                       | float64   | Charges a customer pays per months                                                                             |
+| total_charges                         | float64   | Total charges a customer has paid                                                                              |
+| has_churned                           | int64     | 0 for has not churned, 1 for has churned                                                                       |
+| paperless_billing_numeric             | int64     | 0 for non-paperless billing, 1 for paperless billing                                                           |
+| partner_Yes                           | uint8     | 0 for no partner, 1 for has partner                                                                            |
+| dependents_Yes                        | uint8     | 0 for no dependents, 1 for has dependents                                                                      |
+| gender_Male                           | uint8     | 0 for female, 1 for male                                                                                       |
+| phone_service_Yes                     | uint8     | 0 for no phone service, 1 for phone service                                                                    |
+| multiple_lines_No phone service       | uint8     | 0 for phone service, 1 for no phone service                                                                    |
+| online_security_No internet service   | uint8     | 0 for internet service, 1 for no internet service                                                              |
+| online_security_Yes                   | uint8     | 0 for no online security, 1 for online security                                                                |
+| online_backup_No internet service     | uint8     | 0 for internet service, 1 for no internet service                                                              |
+| online_backup_Yes                     | uint8     | 0 for no online backup, 1 for online backup                                                                    |
+| device_protection_No internet service | uint8     | 0 for internet service, 1 for no internet service                                                              |
+| device_protection_Yes                 | uint8     | 0 for no device protection, 1 for device protection                                                            |
+| tech_support_No internet service      | uint8     | 0 for internet service, 1 for no internet service                                                              |
+| tech_support_Yes                      | uint8     | 0 for no tech support, 1 for tech support                                                                      |
+| streaming_tv_No internet service      | uint8     | 0 for internet service, 1 for no internet service                                                              |
+| streaming_tv_Yes                      | uint8     | 0 for no streaming TV, 1 for streaming TV                                                                      |
+| streaming_movies_No internet service  | uint8     | 0 for internet service, 1 for no internet service                                                              |
+| streaming_movies_Yes                  | uint8     | 0 for no streaming movies, 1 for streaming movies                                                              |
 
 ## Initial Hypotheses 
 
