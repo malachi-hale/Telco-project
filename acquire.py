@@ -7,6 +7,7 @@ def get_connection(db, user=env.user, host=env.host, password=env.password):
 
 def get_telco_data():
     filename = "telco_churn.csv"
+    ##We will write a SQL query to obtain the data
     sql = '''SELECT *
         FROM customers 
         JOIN contract_types
@@ -19,4 +20,6 @@ def get_telco_data():
         return pd.read_csv(filename)
     else:
         df = pd.read_sql(sql, get_connection('telco_churn'))
+        ## We will get rid of duplicate columns that resulted from our SQL query
+        df = df.loc[:,~df.columns.duplicated()]
         return df
