@@ -58,7 +58,7 @@
 | contract_type            | object    | Month-to-month, year, or two-year contract                                                                     |
 | internet_service_type    | object    | DSL, Fiber Optic, or None                                                                                      |
 | payment_type             | object    | Electronic check, mailed check, automatic bank transfer, or automatic credit card payment                      |
-| has_churned              | int64     | 0 for has not churned, 1 for has churned                                                                       |
+
 
 **Features of our data after cleaning** 
 | Feature                               | Dataype   | Definition                                                                                                     |
@@ -156,27 +156,36 @@
  - **Outcome**: I rejected the Null Hypothesis.
 
 ## Executive Summary - Conclusions & Next Steps 
- - With the goal of determining the biggest drivers of churn. I used three classification models: **Decision Tree**, **Random Forest**, and **K Nearest Neighbors**. I varied the parameters on each of these models several times. 
+ - With the goal of determining the biggest drivers of churn. I used three classification models: **Decision Tree**, **RandomForest**, and **K Nearest Neighbors**. I varied the parameters on each of these models several times. All of the models we produced have a higher accuracy than the baseline of 0.73.
 
- - My **Decision Tree** model with `max_depth=3` 
+ - I found that the `RandomForest` with `max_depth=10` and `min_samples_leaf=1` performed with a high level of recall, while still maintaining high accuracy and precision. I concluded that recall score was most important to us because we want to capture all customers who churn. Overestimating churn rate is better than underestimating churn rate. 
+     - Additionally, this model outperformed our baseline accuracy of 0.73, so it has value. 
  
- - Utilitizing **feature_importances** of **Random forest** I was able to determine the relative importance of each variable for predicting churn. The data indicated in the table below shows us that **tenure**, **monthly charges**, **contract type**, and **payment type** are the biggest drivers of churn.
+ - We utilize the `feature_importances` function on our selected `RadomForest` model to obtain the features in the data with the most relative importances.
+ 
     |                  |   relative importance |
     |:-----------------|----------------------:|
-    | tenure           |              0.24197  |
-    | monthly_charges  |              0.156533 |
-    | contract_type_id |              0.148934 |
+    | total_charges    |             0.169107  |
+    | tenure           |             0.165327  |
+    | monthly_charges  |             0.130737  |
+    | contract_type_id |             0.1261    |
+    | payment_type_id  |             0.0777759 |
+    
+ - Our `DecisionTree` model with `max_depth=3` helps us to determine how to associate these values, 
     
 
-**Key finidngs**
-     - We find that having a month-to-month contract is the biggest predictor of churn. 
-     - Of the customers on a month-to-month contract, customers with month charges less than or equal to $68.43 are more likely to churn. 
-     - Of these customers, those with tenure of less than or equal to 5 months are more likely to churn. 
+### Key findings
+ - We find that `total_charges` is the biggest predictor of churn. 
+     - However, because `total_charges = monthly_charges * tenure`, the `total_charges` feature is essentially a combination of `monthly_charges` and `tenure`. 
+ - Our `DecisionTree` model with `max_depth=3` indicates to us that the customers on a month-to-month contract are more likely to churn than customers on a year or two-year contract. 
+     - Among customers on a month-to-month contract additional predictors of cuhrn are having `tenure` of 5 months or less and monthly charges less than $68.43. 
      
-**Recommendations**     
+### Recommendations
  - Based on this data, I recommend that the month-to-month contract be limited to either customers who meet either of the following criteria:
-     - tenure with the company greater than or equal to 5 months. 
+     - tenure with the company of at least 5 months. 
      - Monthly charges greater than or equal to $68.43. 
+ - I also recommend that we explore the data further, particularly looking at our most important features (`total_charges`, `tenure`, `monthly_charges`, `contract_type_id`, and `payment_type_id`) and their association with churn. 
+     - We may be able to adjust the contract requirements based on these criteria to reduce the probability of customer churn. 
      
 ## Pipeline Stages Breakdown
 
