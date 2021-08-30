@@ -154,6 +154,15 @@
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant difference between the mean mean monthly charges for customers who churn and customers who don't churn. 
  
  - **Outcome**: I rejected the Null Hypothesis. There is a significant difference between the mean monthly charges for customers who churn and customers who don't churn.
+ 
+### Hypothesis 8 
+ - **alpha** = 0.05
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no significant difference between the mean total charges for customers who churn and customers who don't churn. 
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant difference between the mean mean total charges for customers who churn and customers who don't churn. 
+ 
+ - **Outcome**: I rejected the Null Hypothesis. There is a significant difference between the mean total charges for customers who churn and customers who don't churn.
 
 ## Executive Summary - Conclusions & Next Steps 
  - With the goal of determining the biggest drivers of churn. I used three classification models: **Decision Tree**, **RandomForest**, and **K Nearest Neighbors**. I varied the parameters on each of these models several times. All of the models we produced have a higher accuracy than the baseline of 0.73.
