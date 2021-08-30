@@ -5,9 +5,9 @@
 ## Objectives 
 
 ### Project Goals
- - To document **code**, our **process** (_data acquisition_, _data preparation_, _exploratory data analysis and statistical testing_, _modeling_, and _model evaluation_), **findings**, and **key takeaways** in a Jupyter Notebook report. 
+ - To document **code**, our **process** (*data acquisition*, *data preparation*, *exploratory data analysis*, and *statistical testing*, *modeling*, and *model evaluation*), **findings**, and **key takeaways** in a Jupyter Notebook report. 
  
- - To create modules (such as acquire.py, prepare.py) that make our process repeatable. 
+ - To create modules (such as `acquire.py`, `prepare.py`) which contain functions that make our process repeatable. 
  
  - To construct a model to predict customer churn using classification techniques. 
  

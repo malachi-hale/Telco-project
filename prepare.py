@@ -25,6 +25,11 @@ def split_data(df):
     return train, validate, test
 
 def prep_telco(df):
+    '''
+       this function will eliminate duplicates, make dummy columns, drop redundant columns, and convert monthly charges and total charges columns into numeric.
+       We will also call upon the split_data function to split our data into train, validate, and test.
+    '''
+        
     ## First we will get rid of duplicate columns
     df = df.loc[:,~df.columns.duplicated()]
     
