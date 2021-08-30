@@ -95,25 +95,70 @@
 
 ### Hypothesis 1
  - **alpha** = 0.05
- - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-year contracts. 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no significant difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-year contracts. 
  
- - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-yera contracts. 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant significant difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-yera contracts. 
  
- - **Outcome**: I rejected the Null Hypothesis. There is a significant difference in the churn rate for customers on month-to-month contracts and customers on either year or two-year contracts. 
+ - **Outcome**: I rejected the Null Hypothesis.
  
 ### Hypothesis 2 
  - **alpha** = 0.05
  
- - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no correlation between customer churn rate and monthly charges. 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no significant correlation between customer churn rate and contract type. 
  
- - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a correlation between customer churn rate and monthly charges.
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant correlation between customer churn rate and contract type.
  
- - **Outcome**: I rejected the Null Hypothesis. The churn rate and monthly charges are correlated.
+ - **Outcome**: I rejected the Null Hypothesis.
  
-  - We run the **Mann Whitney** test on **tenure**, **monthly charges**, **contract type**, **payment type id**, and **internet service type id**. We conclude that for the first four of these variables, there is a significant difference in mean for customers who churn and customers who don't churn. There is no significant difference in mean for **internet service type id**. 
-  
+### Hypothesis 3 
+ - **alpha** = 0.05
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no significant correlation between customer churn rate and payment type ID. 
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant correlation between customer churn rate and payment type ID.
+ 
+ - **Outcome**: I rejected the Null Hypothesis.
+
+### Hypothesis 4
+ - **alpha** = 0.05
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no significant correlation between customer churn rate and monthly charges. 
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant correlation between customer churn rate and monthly charges.
+ 
+ - **Outcome**: I rejected the Null Hypothesis.
+
+### Hypothesis 5
+ - **alpha** = 0.05
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no significant correlation between customer churn rate and internet service type ID. 
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant correlation between customer churn rate and internet service type ID.
+ 
+ - **Outcome**: I rejected the Null Hypothesis.
+
+### Hypothesis 6
+ - **alpha** = 0.05
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no significant difference between the mean tenure for customers who churn and customers who don't churn. 
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant difference between the mean tenure for customers who churn and customers who don't churn. 
+ 
+ - **Outcome**: I rejected the Null Hypothesis.
+
+### Hypothesis 7
+ - **alpha** = 0.05
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no significant difference between the mean monthly charges for customers who churn and customers who don't churn. 
+ 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant difference between the mean mean monthly charges for customers who churn and customers who don't churn. 
+ 
+ - **Outcome**: I rejected the Null Hypothesis.
+
 ## Executive Summary - Conclusions & Next Steps 
-With the goal of determining the biggest drivers of churn. I used two classification models: **Random forest** and **Decision Tree**.
+ - With the goal of determining the biggest drivers of churn. I used three classification models: **Decision Tree**, **Random Forest**, and **K Nearest Neighbors**. I varied the parameters on each of these models several times. 
+
+ - My **Decision Tree** model with `max_depth=3` 
  
  - Utilitizing **feature_importances** of **Random forest** I was able to determine the relative importance of each variable for predicting churn. The data indicated in the table below shows us that **tenure**, **monthly charges**, **contract type**, and **payment type** are the biggest drivers of churn.
     |                  |   relative importance |
@@ -122,8 +167,7 @@ With the goal of determining the biggest drivers of churn. I used two classifica
     | monthly_charges  |              0.156533 |
     | contract_type_id |              0.148934 |
     
- - We use the the **Decision Tree** model to determine how to associate the specified variables. 
- 
+
 **Key finidngs**
      - We find that having a month-to-month contract is the biggest predictor of churn. 
      - Of the customers on a month-to-month contract, customers with month charges less than or equal to $68.43 are more likely to churn. 
