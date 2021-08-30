@@ -25,13 +25,13 @@
  - The Codeup Data Science team. 
   
 ## Data Dictionary
-**Target Variable**
+### Target Variable
 
 | Target   | Dataype   | Definition                            |
 |:---------|:----------|:--------------------------------------|
 | churn    | object    | Whether or not a customer has churned |
 
-**Features of our data, before cleaning**
+### Features of our data, before cleaning
 | Feature                  | Dataype   | Definition                                                                                                     |
 |:-------------------------|:----------|:---------------------------------------------------------------------------------------------------------------|
 | customer_id              | object    | Identification number for customer                                                                             |
@@ -60,7 +60,7 @@
 | payment_type             | object    | Electronic check, mailed check, automatic bank transfer, or automatic credit card payment                      |
 
 
-**Features of our data after cleaning** 
+### Features of our data after cleaning 
 | Feature                               | Dataype   | Definition                                                                                                     |
 |:--------------------------------------|:----------|:---------------------------------------------------------------------------------------------------------------|
 | customer_id                           | object    | Identification number for customer                                                                             |
@@ -97,9 +97,9 @@
  - **alpha** = 0.05
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no significant difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-year contracts. 
  
- - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant significant difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-yera contracts. 
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant significant difference in the churn rate for customers on month-to-month contracts and the churn rate for customers on either year or two-year contracts. 
  
- - **Outcome**: I rejected the Null Hypothesis.
+ - **Outcome**: I rejected the Null Hypothesis. There is a significant difference in churn rate for customers on a month-to-month contract and customers on either year or two-year contracts.
  
 ### Hypothesis 2 
  - **alpha** = 0.05
@@ -108,7 +108,7 @@
  
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant correlation between customer churn rate and contract type.
  
- - **Outcome**: I rejected the Null Hypothesis.
+ - **Outcome**: I rejected the Null Hypothesis. There is a significant correlation between customer churn rate and contract type.
  
 ### Hypothesis 3 
  - **alpha** = 0.05
@@ -117,7 +117,7 @@
  
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant correlation between customer churn rate and payment type ID.
  
- - **Outcome**: I rejected the Null Hypothesis.
+ - **Outcome**: I rejected the Null Hypothesis. There is a significant correlation between customer churn rate and payment type ID.
 
 ### Hypothesis 4
  - **alpha** = 0.05
@@ -126,7 +126,7 @@
  
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant correlation between customer churn rate and monthly charges.
  
- - **Outcome**: I rejected the Null Hypothesis.
+ - **Outcome**: I rejected the Null Hypothesis. There is a significant correlation between customer churn rate and monthly charges.
 
 ### Hypothesis 5
  - **alpha** = 0.05
@@ -135,7 +135,7 @@
  
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant correlation between customer churn rate and internet service type ID.
  
- - **Outcome**: I rejected the Null Hypothesis.
+ - **Outcome**: I rejected the Null Hypothesis. There is a significant correlation between customer churn rate and internet service type ID.
 
 ### Hypothesis 6
  - **alpha** = 0.05
@@ -144,7 +144,7 @@
  
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant difference between the mean tenure for customers who churn and customers who don't churn. 
  
- - **Outcome**: I rejected the Null Hypothesis.
+ - **Outcome**: I rejected the Null Hypothesis. There is a significant difference between the mean tenure for customers who churn and customers who don't churn.
 
 ### Hypothesis 7
  - **alpha** = 0.05
@@ -153,7 +153,7 @@
  
  - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_a): There is a significant difference between the mean mean monthly charges for customers who churn and customers who don't churn. 
  
- - **Outcome**: I rejected the Null Hypothesis.
+ - **Outcome**: I rejected the Null Hypothesis. There is a significant difference between the mean monthly charges for customers who churn and customers who don't churn.
 
 ## Executive Summary - Conclusions & Next Steps 
  - With the goal of determining the biggest drivers of churn. I used three classification models: **Decision Tree**, **RandomForest**, and **K Nearest Neighbors**. I varied the parameters on each of these models several times. All of the models we produced have a higher accuracy than the baseline of 0.73.
@@ -283,7 +283,4 @@
  - Read this `README.md` file.
  - Download `acquire.py`, `prepare.py`, and `final_report.ipynb`.
  - Add your own `env.py` file to your directory. 
- - Run the `final_report.ipynb` notebook.
- 
-
- 
+ - Run the `final_report.ipynb` notebook. 
