@@ -291,5 +291,5 @@
  To reproduce my project, you will need you own `env.py` file with database credentials, in addition to the files listed below:
  - Read this `README.md` file.
  - Download `acquire.py`, `prepare.py`, and `final_report.ipynb`.
- - Add your own `env.py` file to your directory. 
+ - Add your own `env.py` file to your directory. You will need access to the SQL database to access the Telco data.
  - Run the `final_report.ipynb` notebook. 
